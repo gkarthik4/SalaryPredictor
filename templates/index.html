@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict House Prices</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/predict" method="post">
+    	<input type="text" name="dayhours" placeholder="dayhours" required="required" /> <br>
+		
+		<input type="text" name="room_bed" placeholder="room_bed" required="required" /> <br>
+		<input type="text" name="room_bath" placeholder="room_bath" required="required" /> <br>
+		<input type="text" name="living_measure" placeholder="living_measure" required="required" /> <br>
+		<input type="text" name="lot_measure" placeholder="lot_measure" required="required" /> <br>
+		<input type="text" name="ceil" placeholder="ceil" required="required" /> <br>
+		<input type="text" name="coast" placeholder="coast" required="required" /> <br>
+		<input type="text" name="sight" placeholder="sight" required="required" /> <br>
+		<input type="text" name="condition" placeholder="condition" required="required" /> <br>
+        <input type="text" name="quality" placeholder="quality" required="required" /> <br>
+		<input type="text" name="ceil_measure" placeholder="ceil_measure" required="required" /> <br>
+		<input type="text" name="basement" placeholder="basement" required="required" /> <br>
+		<input type="text" name="yr_built" placeholder="yr_built" required="required" /> <br>
+		
+		<input type="text" name="yr_renovated" placeholder="yr_renovated" required="required" /> <br>
+		
+		<input type="text" name="zipcode" placeholder="zipcode" required="required" /> <br>
+		<input type="text" name="lat" placeholder="lat" required="required" /> <br>
+		<input type="text" name="long" placeholder="long" required="required" /> <br>
+		<input type="text" name="living_measure15" placeholder="living_measure15" required="required" /> <br>
+		<input type="text" name="lot_measure15" placeholder="lot_measure15" required="required" /> <br>
+		<input type="text" name="furnished" placeholder="furnished" required="required" /> <br>
+		<input type="text" name="total_area" placeholder="total_area" required="required" /> <br>
+		
+		
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
