@@ -19,7 +19,6 @@ CaseRecommender==1.0.918.post0
 certifi==2018.11.29
 cffi==1.11.5
 chardet==3.0.4
-clyent==1.2.2
 colorama==0.4.1
 comtypes==1.1.7
 conda==4.8.2
